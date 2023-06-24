@@ -4,14 +4,17 @@
 }
 
 body {
-    background-color: ivory;
+    background-color: #43AA8B;
 }
 
-table {
-    border-collapse: collapse;
-    border: solid 3px rgba(0, 0, 0, 0.455);
-    margin: auto;
-
+.tableau{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 80vh;
+    justify-content: space-around;
+     margin: auto;
+    
 }
 
 h1 {
@@ -20,7 +23,7 @@ h1 {
     left: 220px;
     animation-name: clign;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; text-align: center;
 
 }
 @keyframes clign {
@@ -49,9 +52,13 @@ h1 {
 .anim-4,
 .anim-5,
 .anim-6 {
-
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 150px;
+    background-color: #7BAD93;
+ 
+    border:solid 1px #3d6952;
+  
+   
 }
 
 td {
@@ -65,7 +72,8 @@ td {
     border: solid rgba(205, 63, 63, 0.573);
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 70px;
+
 
 }
 
@@ -76,6 +84,8 @@ td {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
+ 
+
 }
 
 
@@ -123,7 +133,7 @@ td {
     border: solid rgba(53, 109, 228, 0.427);
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 70px;
 }
 
 .rond,
@@ -234,7 +244,7 @@ td {
     border-top: solid 3px rgb(9, 9, 219);
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 70px;
     animation-name: anim4;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -285,7 +295,7 @@ td {
     border: solid 30px rgba(0, 117, 227, 0.851);
     margin: auto;
     position: relative;
-    top: 20px;
+    top: 7px;
 
 
 }
@@ -334,7 +344,7 @@ td {
     height: 20px;
     border-radius: 50%;
     background-color: rgb(0, 21, 255);
-    top: 80px;
+    top: 50px;
 
 }
 
@@ -351,7 +361,7 @@ td {
     animation-delay: 1s;
     animation-iteration-count: infinite;
 
-    top: 100px;
+    top: 70px;
 
 }
 
@@ -431,4 +441,32 @@ td {
 
     animation-play-state:paused;
 }
-
+@media screen and (max-width:600px){
+    .anim-1,
+.anim-2,
+.anim-3,
+.anim-4,
+.anim-5,
+.anim-6{
+  margin-top: 10px;
+}
+}
+@media screen and (min-width:600px){
+    .anim-1,
+    .anim-2,
+    .anim-3,
+    .anim-4,
+    .anim-5,
+    .anim-6{
+      margin-top: 10px;
+    }
+}
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:992px){
+    
+}
+@media screen and (min-width:1200px){
+    
+}
